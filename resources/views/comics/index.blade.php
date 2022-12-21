@@ -3,7 +3,7 @@
 @section('title', 'Tutti i Comics')
 
 @section('content')
-    <section class="bg-secondary">
+    <section class="text-primary">
         <div class="container py-4">
             <h1 class="text-center">Tutti i nostri Comics</h1>
         </div>

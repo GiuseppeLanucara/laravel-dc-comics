@@ -4,8 +4,8 @@
 
 @section('content')
     <div class="container">
-        <h2 class="text-center">Aggiungi un nuovo Comic alla lista</h2>
-        <div class="row justify-content-center">
+        <h2 class="text-center text-primary">Aggiungi un nuovo Comic alla lista</h2>
+        <div class="row justify-content-center text-primary">
             <div class="col-6">
                 <form action="{{ route('comics.store') }}" method="POST">
                     @csrf
