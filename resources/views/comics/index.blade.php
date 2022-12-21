@@ -11,6 +11,9 @@
 
     <section>
         <div class="container mt-5">
+            <div class="add mt-4 mb-4">
+                <a href="{{ route('comics.create') }}" class="btn btn-primary">Aggiungi un Comic alla lista</a>
+            </div>
             <table class="table table-striped">
                 <thead>
                     <tr>
