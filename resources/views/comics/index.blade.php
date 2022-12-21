@@ -26,7 +26,8 @@
                             <th scope="row">{{ $comic->title }}</th>
                             <td>{{ $comic->type }}</td>
                             <td>{{ $comic->price }}</td>
-                            <td>Actions</td>
+                            <td><a class="btn btn-primary" href="{{ route('comics.show', $comic->id) }}"><i
+                                        class="fa-solid fa-circle-info"></i></a></td>
                         </tr>
                     @endforeach
 
