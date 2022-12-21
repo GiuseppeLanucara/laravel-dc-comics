@@ -7,7 +7,7 @@
             <nav class="navbar">
                 <ul class="navbar-nav d-flex flex-row w-100 justify-content-between">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link" href="/comics">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('comics.index') }}">Comics</a>
