@@ -34,6 +34,14 @@
                                         class="fa-solid fa-circle-info"></i></a>
                                 <a class="btn btn-warning" href="{{ route('comics.edit', $comic->id) }}"><i
                                         class="fa-solid fa-arrows-to-circle"></i></a>
+
+                                <form action="{{ route('comics.destroy', $comic->id) }}" class="d-inline" method="POST">
+                                    @method('DELETE')
+                                    @csrf
+                                    <button type="submit" class="btn btn-danger">
+                                        <i class="fa-solid fa-recycle"></i>
+                                    </button>
+                                </form>
                             </td>
                         </tr>
                     @endforeach
