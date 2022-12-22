@@ -8,7 +8,9 @@
     <div class="container">
         <h2>Modifica i dati del fumetto: {{ $comic->title }}</h2>
         <div class="row col-6 justify-content-center">
-            <form action="">
+            <form action="{{ route('comics.update', $comic->id) }}" method="POST">
+                @method('PUT')
+                @csrf
                 <div class="mb-3 mt-3">
                     <label for="title">Titolo</label>
                     <input type="text" id="title" name="title" class="form-control" value="{{ $comic->title }}">
@@ -46,6 +48,8 @@
                     <input type="varchar(30)" class="form-control" id="type" name="type"
                         value="{{ $comic->type }}">
                 </div>
+
+                <button type="submit" class="btn btn-warning">Salva Modifiche</button>
             </form>
         </div>
     </div>

@@ -29,8 +29,12 @@
                             <th scope="row">{{ $comic->title }}</th>
                             <td>{{ $comic->type }}</td>
                             <td>{{ $comic->price }}</td>
-                            <td><a class="btn btn-primary" href="{{ route('comics.show', $comic->id) }}"><i
-                                        class="fa-solid fa-circle-info"></i></a></td>
+                            <td>
+                                <a class="btn btn-primary" href="{{ route('comics.show', $comic->id) }}"><i
+                                        class="fa-solid fa-circle-info"></i></a>
+                                <a class="btn btn-warning" href="{{ route('comics.edit', $comic->id) }}"><i
+                                        class="fa-solid fa-arrows-to-circle"></i></a>
+                            </td>
                         </tr>
                     @endforeach
 
